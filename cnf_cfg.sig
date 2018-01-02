@@ -6,7 +6,7 @@ signature CNFCFG = sig
       INR of variable * variable
     | INL of terminal
 
-  type production = terminal * term
+  type production = variable * term
 
   val v     : terminal   list
   val sigma : variable   list

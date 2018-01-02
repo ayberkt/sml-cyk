@@ -2,4 +2,4 @@ Group is
   $/basis.cm
   lib/cmlib.cm
   cnf_cfg.sig
-  cnf_cfg.sml
+  sample_cnf_cfg.sml
