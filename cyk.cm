@@ -2,7 +2,9 @@ Group is
   $/smlnj-lib.cm
   $/basis.cm
   lib/cmlib.cm
+  imperative.sml
   cnf_cfg.sig
   sample_cnf_cfg.sml
   chart.sig
   chart.sml
+  parse.sml
