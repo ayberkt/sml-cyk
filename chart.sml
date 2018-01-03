@@ -1,4 +1,5 @@
 structure NaiveChart : CHART = struct
+  open Imperative infix 6 upto downto
   structure ChartKey : ORD_KEY = struct
     type ord_key = int * int * int
     val compare =
@@ -27,4 +28,12 @@ structure NaiveChart : CHART = struct
     end
 
   fun get (p, s, b) = valOf (Chart.find (!chart_main, (p, s, b)))
+
+  val initChart =
+    fn (x : int, y : int, z : int) =>
+      for (0 upto x) (fn i =>
+        for (0 upto y) (fn j =>
+          for (0 upto z) (fn k =>
+            set (i, j, k) false)))
+
 end
